@@ -21,21 +21,21 @@ export default function Home() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 
-			<main className='w-full px-4 min-h-[80vh] '>
-				<div className='container flex flex-col-reverse md:flex-row items-center justify-between w-full min-h-[80vh]'>
-					<section className='left flex-1 flex flex-col items-start justify-between gap-5 text-gray-700 overflow-hidden  '>
-						<h1 className='text-blue-500 text-3xl '>
+			<main className='w-full pt-[10vh] px-4 min-h-[80vh] '>
+				<div className='container flex flex-col-reverse  md:flex-row items-center justify-between w-full min-h-[80vh]'>
+					<section className='left flex-1 flex flex-col items-center sm:items-start justify-between gap-5 md:text-gray-700 text-gray-100 overflow-hidden pt-5 min-h-[300px] md:h-[70vh] absolute top-[10rem] md:relative md:top-0 z-40 bg-gray-600/70 md:bg-inherit py-6 px-6 mx-6 sm:mx-16 md:mx-auto rounded-lg   '>
+						<h1 className=' text-blue-300 md:text-blue-500 text-center sm:text-start '>
 							hie,{' '}
-							<span className=' animate-fade-in block '>
+							<span className=' animate-fade-in block  '>
 								I am Blessings Butao
 							</span>
-							<span className=' text-5xl mt-4 h-[50px] items-center   overflow-hidden flex-col  flex '>
+							<span className=' text-center text-5xl mt-4 h-[50px] items-center   overflow-hidden flex-col  flex '>
 								{list.map((li, index) => (
 									<span
 										key={index}
 										className='
 											animate-draw-top block self-start
-                              py-1 text-red-500 bg-slate-200'
+                              py-1 text-red-300 md:text-red-500  sm:bg-slate-200 text-center'
 									>
 										{li.title}
 									</span>
@@ -46,17 +46,18 @@ export default function Home() {
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
 							neque enim natus facere sint aperiam amet sed
 						</p>
-						<button className=' border px-5 py-2 rounded-md text-purple-400 shadow-md hover:bg-purple-100 hover:border hover:text-gray-500 border-white text-inherit transition-all ease-out duration-100 delay-75 '>
+						<button className=' w-[160px] py-2 rounded-md bg-purple-400 shadow-md hover:bg-purple-300 hover:border hover:text-gray-500  border-slate-300 border-2 text-inherit transition-all ease-out duration-100 self-center delay-75 sm:self-start z-50 '>
 							hire me
 						</button>
 					</section>
-					<section className='flex-1 h-[300px] md:h-[70vh] w-full  relative'>
+
+					<section className='flex-1 h-[400px] rounded-md z-30 overflow-hidden bg-black md:bg-inherit lg:h-[70vh] w-full  relative'>
 						<Image
 							src='/images/image-hero.png'
 							alt='hero-image'
 							layout='fill'
 							objectFit='cover'
-							className=' hover:animate-fade-out'
+							className=' '
 						/>
 					</section>
 				</div>

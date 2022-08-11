@@ -12,15 +12,18 @@ module.exports = {
 				poppins: ['Poppins', ' sans-serif'],
 			},
 			animation: {
-				'fade-in': 'fadeLeft 1s ease-in forwards',
-				'fade-out': 'fadeRight 1s ease-in forewards',
-				'draw-top': 'drawTop 10s ease-in-out alternate  infinite',
-				'fade-leters': 'fadeLetters 1s ease-in-out alternate  infinite',
+				'fade-in': 'fadeLeft 1.5s ease-in forwards',
+				'fade-out': 'fadeRight 1.5s ease-in forewards',
+				'draw-top': 'drawTop 4s ease-in-out alternate  infinite',
+				'fade-leter': 'fade0Letter 1s ease-in-out alternate  infinite',
+				'fade-leter2': 'fade1Letter 2s ease-in-out alternate  infinite',
+				'fade-leter3': 'fade2Letter 3s ease-in-out alternate  infinite',
 			},
 			keyframes: {
 				fadeLeft: {
 					'0%': {
 						opacity: 0,
+
 						transform: 'translateX(-30%)',
 					},
 					'50%': {
@@ -35,11 +38,12 @@ module.exports = {
 				fadeRight: {
 					'0%': {
 						opacity: 0,
-						transform: 'translateX(120%)',
+
+						transform: 'translateX(-50%)',
 					},
 					'50%': {
-						opacity: 0.5,
-						transform: 'translateX(30%)',
+						opacity: 0.3,
+						transform: 'translateX(60%)',
 					},
 					'100%': {
 						opacity: 1,
@@ -56,16 +60,38 @@ module.exports = {
 					},
 
 					'100%': {
-						transform: 'translateY(-110px)',
+						transform: 'translateY(-120px)',
 					},
 				},
 
-				fadeLetters: {
+				fade0Letter: {
 					'0%': {
-						opacity: 0.5,
+						opacity: 0.8,
 					},
+
 					'100%': {
 						opacity: 1,
+						color: '#BE90D4',
+					},
+				},
+				fade1Letter: {
+					'0%': {
+						opacity: 0.8,
+					},
+
+					'100%': {
+						opacity: 1,
+						color: '#89729E',
+					},
+				},
+				fade2Letter: {
+					'0%': {
+						opacity: 0.8,
+					},
+
+					'100%': {
+						opacity: 1,
+						color: '#9B59B6',
 					},
 				},
 			},
