@@ -7,6 +7,7 @@ import Loader from './components/Loader';
 
 export default function Home() {
 	const router = useRouter();
+	const location = useLocation();
 	const list = [
 		{ title: 'frontend' },
 		{ title: 'web' },
@@ -54,10 +55,7 @@ export default function Home() {
 								))}
 							</span>
 						</h1>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
-							neque enim natus facere sint aperiam amet sed
-						</p>
+						<p>for your online presence and all web solution contact us</p>
 						<button
 							className=' w-[160px] py-2 rounded-md bg-purple-400 shadow-md hover:bg-purple-300 hover:border hover:text-gray-500  border-slate-300 border-2 text-inherit transition-all ease-out duration-100 self-center delay-75 sm:self-start z-50 '
 							onClick={() => router.push('/contact')}
