@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 
 const About = () => {
+	const router = useRouter();
 	const [isLoading, setIsLoading] = useState(false);
 	useEffect(() => {
 		setIsLoading(true);
@@ -17,27 +19,33 @@ const About = () => {
 	}
 	return (
 		<div className=' min-h-screen pt-20 text-gray-600 px-4'>
-			<h1 className='text-center text-3xl py-4 font-bold'>
-				hie its blessings here
-			</h1>
+			{router.pathname === '/' ? (
+				<h1 className='text-center text-3xl py-4 font-bold'> more about me</h1>
+			) : (
+				<h1 className='text-center text-3xl py-4 font-bold'>
+					hie its blessings here
+				</h1>
+			)}
 
-			<div className='flex justify-center'>
-				<div className='w-1/2 relative pr-2'>
-					<Image
-						src='/images/hero-image.jpg'
-						alt='profile'
-						layout='fill'
-						objectFit='cover'
-					/>
-				</div>
-				<div className='w-1/2'>
-					{/* <img
+			{router.pathname === '/about-me' && (
+				<div className='flex justify-center'>
+					<div className='w-1/2 relative pr-2'>
+						<Image
+							src='/images/hero-image.jpg'
+							alt='profile'
+							layout='fill'
+							objectFit='cover'
+						/>
+					</div>
+					<div className='w-1/2'>
+						{/* <img
 						src='https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
 						alt='profile'
 						className='w-full h-full object-cover'
 					/> */}
+					</div>
 				</div>
-			</div>
+			)}
 			<h2 className=' text-3xl tracking-widest py-3'>skills and experience</h2>
 			<p className=' leading-6 p-2 bg-white tracking-wider'>
 				2 years of experience in the web Software developer, with knowledge and

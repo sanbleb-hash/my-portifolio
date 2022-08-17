@@ -7,7 +7,6 @@ import Loader from './components/Loader';
 
 export default function Home() {
 	const router = useRouter();
-	const location = useLocation();
 	const list = [
 		{ title: 'frontend' },
 		{ title: 'web' },

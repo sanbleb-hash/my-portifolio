@@ -56,10 +56,19 @@ const Navbar = () => {
 							onClick={handleOpen}
 						/>
 						<div className='flex flex-col justify-start gap-4 items-center h-full w-1/2 bg-purple-200 text-gray-500  opacity-75 pt-14 text-3xl'>
-							<h3>home</h3>
-							<h3>about</h3>
-							<h3>my work</h3>
-							<button className='border px-5 py-2 rounded-md mt-24 text-purple-600 shadow-md hover:bg-white hover:border  border-white text-inherit transition-all ease-out duration-100 delay-75 animate-fade-in '>
+							<h3 onClick={handleOpen}>
+								<Link href='/'>home</Link>
+							</h3>
+							<h3 onClick={handleOpen}>
+								<Link href='/about-me'>about</Link>{' '}
+							</h3>
+							<h3 onClick={handleOpen}>
+								<Link href='/my-works'>my works</Link>
+							</h3>
+							<button
+								className='border px-5 py-2 rounded-md mt-24 text-purple-600 shadow-md hover:bg-white hover:border  border-white text-inherit transition-all ease-out duration-100 delay-75 animate-fade-in '
+								onClick={handleOpen}
+							>
 								<Link href='/contact'>hire me</Link>
 							</button>
 						</div>
