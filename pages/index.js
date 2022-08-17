@@ -1,17 +1,29 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import About from './about-me';
+import Loader from './components/Loader';
 
 export default function Home() {
+	const router = useRouter();
 	const list = [
 		{ title: 'frontend' },
 		{ title: 'web' },
 		{ title: 'developer' },
 	];
-	const color = {
-		blue: '#00bcd4',
-		red: '#ff0000',
-		green: '#00ff00',
-	};
+	const [isLoading, setIsLoading] = useState(false);
+
+	useEffect(() => {
+		setIsLoading(true);
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 0.3 * 1000);
+	}, []);
+
+	if (isLoading) {
+		return <Loader />;
+	}
 
 	return (
 		<div className=''>
@@ -35,7 +47,7 @@ export default function Home() {
 										key={index}
 										className='
 											animate-draw-top block self-start
-                              py-1 text-red-300 md:text-red-500  sm:bg-slate-200 text-center'
+                              py-1 text-red-300 md:text-red-600  sm:bg-slate-200 text-center font-fila '
 									>
 										{li.title}
 									</span>
@@ -46,14 +58,17 @@ export default function Home() {
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
 							neque enim natus facere sint aperiam amet sed
 						</p>
-						<button className=' w-[160px] py-2 rounded-md bg-purple-400 shadow-md hover:bg-purple-300 hover:border hover:text-gray-500  border-slate-300 border-2 text-inherit transition-all ease-out duration-100 self-center delay-75 sm:self-start z-50 '>
+						<button
+							className=' w-[160px] py-2 rounded-md bg-purple-400 shadow-md hover:bg-purple-300 hover:border hover:text-gray-500  border-slate-300 border-2 text-inherit transition-all ease-out duration-100 self-center delay-75 sm:self-start z-50 '
+							onClick={() => router.push('/contact')}
+						>
 							hire me
 						</button>
 					</section>
 
-					<section className='flex-1 h-[400px] rounded-md z-30 overflow-hidden bg-black md:bg-inherit lg:h-[70vh] w-full  relative'>
+					<section className='flex-1 h-[400px] rounded-md z-30 overflow-hidden bg-black md:bg-inherit lg:h-[70vh] w-full  relative before:absolute before:inset-0 before:bg-black/50 before:z-50'>
 						<Image
-							src='/images/image-hero.png'
+							src='/images/hero-image.jpg'
 							alt='hero-image'
 							layout='fill'
 							objectFit='cover'
@@ -62,6 +77,7 @@ export default function Home() {
 					</section>
 				</div>
 			</main>
+			<About />
 		</div>
 	);
 }
