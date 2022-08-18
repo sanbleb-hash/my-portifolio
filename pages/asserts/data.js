@@ -8,6 +8,7 @@ export const data = [
 			'this app is for patients to be able to book a specific medical doctor with in a particular feild or category, to be able to create an appointment a petient has to login or register through the application first, there after they can book update and cancel appointments.then the request doctor can view his appointments decide to confirm or cancel and delete appointments. uses JWT authentication and a mongoDB database to store the appointments',
 
 		techStack: ['reactjs,nodejs,expressjs,mongodb'],
+		link: 'https://doctor-appointments.herokuapp.com/',
 	},
 	{
 		id: 2,
@@ -18,6 +19,7 @@ export const data = [
 			'this app is for a videographer interprenuer based in Cape to who wanted to showcase his work and have  sound portifolio to be able to provide clients with what he is able to do then clients can book him through the app.This app uses Strapi backend therefore postgresql database to store the videos and images.',
 
 		techStack: ['reactjs | nextJS,Strapi'],
+		link: 'https://festive-benz-62e173.netlify.app/',
 	},
 	{
 		id: 3,
@@ -28,5 +30,6 @@ export const data = [
 			'this is real estate app where people can view others postings and book a viewing ,can create their own listings provided they register and login to the app ,update listings or their profiles, this is an extraction of Brad Travery real estate project but instead of using nodejs and mongoDB I used Strapi backend. uses strapi JWT authentication and postgresql database to store the listings',
 
 		techStack: ['reactjs,Strapi'],
+		link: 'https://house-market-mern-01.vercel.app/',
 	},
 ];
