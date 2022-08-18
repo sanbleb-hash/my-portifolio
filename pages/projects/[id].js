@@ -34,28 +34,23 @@ const DetailsPage = () => {
 	return (
 		<div className='w-[80vw] pt-[10vh] px-4 min-h-[80vh] mx-auto '>
 			<h1 className=' text-gray-600 pb-7 '>{title} app</h1>
-			<button
-				className='cursor-pointer bg-purple-300 m-2'
-				onClick={() => console.log('prev')}
-			>
-				go back <AiOutlineArrowLeft className='text-gray-600 ' />
-			</button>
+			<Link href='/projects' className='cursor-pointer bg-purple-300 m-2'>
+				go back
+			</Link>
+			<AiOutlineArrowLeft className='text-gray-600 inline-block pl-3 ' />
 			<div className='flex  justify-between items-center w-full py-6 '>
 				<div className='w-full h-full '>
 					<div className='w-full  p-4 relative h-[40vh] shadow-xl shadow-red-200 mb-7 flex '>
-						{sliderImages?.map(
-							(image, index) =>
-								currentImage && (
-									<Image
-										key={index}
-										src={image}
-										alt={project.name}
-										layout='fill'
-										objectFit='cover'
-										className='rounded-lg w-full  object-fill shadow-lg '
-									/>
-								)
-						)}
+						{sliderImages?.map((image, index) => (
+							<Image
+								key={index}
+								src={image}
+								alt={project.name}
+								layout='fill'
+								objectFit='cover'
+								className='rounded-lg w-full  object-fill shadow-lg '
+							/>
+						))}
 					</div>
 					<span className='absolute top-0 left-0  w-full h-full flex justify-between items-center '>
 						<AiOutlineArrowLeft
