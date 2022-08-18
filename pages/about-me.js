@@ -63,7 +63,7 @@ const About = () => {
 			</ul>
 			<p className=' pt-5 text-gray-400 tracking-wider text-xl inline-block'>
 				check out some of my{' '}
-				<Link href='/my-works' passHref>
+				<Link href='/projects' passHref>
 					<a className='text-purple-400  text-xl  underline hover:text-red-300'>
 						projects
 					</a>

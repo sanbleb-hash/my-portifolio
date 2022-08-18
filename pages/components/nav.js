@@ -32,7 +32,7 @@ const Navbar = () => {
 						<Link href='about-me'>about me</Link>
 					</li>
 					<li className='mr-3 hidden md:inline-block'>
-						<Link href='/my-works'>my work</Link>
+						<Link href='/projects'>my work</Link>
 					</li>
 				</ul>
 				<span>
@@ -63,7 +63,7 @@ const Navbar = () => {
 								<Link href='/about-me'>about</Link>{' '}
 							</h3>
 							<h3 onClick={handleOpen}>
-								<Link href='/my-works'>my works</Link>
+								<Link href='/projects'>my works</Link>
 							</h3>
 							<button
 								className='border px-5 py-2 rounded-md mt-24 text-purple-600 shadow-md hover:bg-white hover:border  border-white text-inherit transition-all ease-out duration-100 delay-75 animate-fade-in '
