@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Loader from '../components/Loader';
-import { data } from '../asserts/data';
+import { data } from '../../asserts/data';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
