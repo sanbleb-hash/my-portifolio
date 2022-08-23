@@ -14,13 +14,10 @@ const DetailsPage = () => {
 	const project = data.find((project) => project.name === title);
 
 	const sliderImages = project?.image;
-	const handleNext = () => {
-		if (currentImage < sliderImages - 1) {
+	const handleNext = (direction) => {
+		if (direction === 'right') {
 			setCurrentImage(currentImage + 1);
-		}
-	};
-	const handlePrev = () => {
-		if (currentImage > 0) {
+		} else {
 			setCurrentImage(currentImage - 1);
 		}
 	};
@@ -34,13 +31,10 @@ const DetailsPage = () => {
 	return (
 		<div className='w-[80vw] pt-[10vh] px-4 min-h-[80vh] mx-auto '>
 			<h1 className=' text-gray-600 pb-7 '>{title} app</h1>
-			<Link href='/projects' className='cursor-pointer bg-purple-300 m-2'>
-				go back
-			</Link>
-			<AiOutlineArrowLeft className='text-gray-600 inline-block pl-3 ' />
+
 			<div className='flex  justify-between items-center w-full py-6 '>
 				<div className='w-full h-full '>
-					<div className='w-full  p-4 relative h-[40vh] shadow-xl shadow-red-200 mb-7 flex '>
+					<div className='w-full  p-4 relative h-[40vh] shadow-xl shadow-red-200 mb-7 flex items-center '>
 						{sliderImages?.map((image, index) => (
 							<Image
 								key={index}
@@ -52,16 +46,18 @@ const DetailsPage = () => {
 							/>
 						))}
 					</div>
-					<span className='absolute top-0 left-0  w-full h-full flex justify-between items-center '>
-						<AiOutlineArrowLeft
-							onClick={handleNext}
-							className='bg-purple-400 text-white rounded-full text-4xl cursor-pointer  '
-						/>
-						<AiOutlineArrowRight
-							onClick={handlePrev}
-							className='bg-purple-400 text-white rounded-full text-4xl cursor-pointer  '
-						/>
-					</span>
+					{sliderImages.length > 1 && (
+						<span className='absolute top-0 left-0  w-full h-full flex justify-between items-center '>
+							<AiOutlineArrowLeft
+								onClick={(left) => handleNext(left)}
+								className='bg-purple-400 text-white rounded-full text-4xl cursor-pointer ml-14  '
+							/>
+							<AiOutlineArrowRight
+								onClick={(right) => handleNext(right)}
+								className='bg-purple-400 text-white rounded-full text-4xl mr-14 cursor-pointer  '
+							/>
+						</span>
+					)}
 					<div className='bg-white shadow-md rounded-lg p-4'>
 						<div className='flex justify-between items-start gap-4 flex-col '>
 							<h2 className='text-2xl font-bold'>{project.name}</h2>
@@ -85,6 +81,9 @@ const DetailsPage = () => {
 					</div>
 				</div>
 			</div>
+			<Link href='/projects' className='cursor-pointer bg-purple-300 m-2'>
+				go back
+			</Link>
 		</div>
 	);
 };

@@ -8,7 +8,7 @@ export const data = [
 			'this app is for patients to be able to book a specific medical doctor with in a particular feild or category, to be able to create an appointment a petient has to login or register through the application first, there after they can book update and cancel appointments.then the request doctor can view his appointments decide to confirm or cancel and delete appointments. uses JWT authentication and a mongoDB database to store the appointments',
 
 		techStack: ['reactjs,nodejs,expressjs,mongodb'],
-		link: 'https://doctor-appointments.herokuapp.com/',
+		link: 'https://docappointmentsapp.herokuapp.com',
 	},
 	{
 		id: 2,
