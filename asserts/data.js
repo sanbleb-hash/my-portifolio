@@ -19,7 +19,7 @@ export const data = [
 			'this app is for a videographer interprenuer based in Cape to who wanted to showcase his work and have  sound portifolio to be able to provide clients with what he is able to do then clients can book him through the app.This app uses Strapi backend therefore postgresql database to store the videos and images.',
 
 		techStack: ['reactjs | nextJS,Strapi'],
-		link: 'works-mult-media.vercel.app',
+		link: 'https://works-mult-media.vercel.app/',
 	},
 	{
 		id: 3,
