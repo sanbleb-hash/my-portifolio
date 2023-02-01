@@ -22,9 +22,9 @@ const About = () => {
 			{router.pathname === '/' ? (
 				<h1 className='text-center text-3xl py-4 font-bold'> more about me</h1>
 			) : (
-				<h1 className='text-center text-3xl py-4 font-bold'>
-					hie its blessings here
-				</h1>
+				<span className='text-center text-3xl py-4 font-bold'>
+					Hie its Blessings
+				</span>
 			)}
 
 			{router.pathname === '/about-me' && (
@@ -53,7 +53,7 @@ const About = () => {
 				| nextjs , HTML, CSS, tailwindcss, Styled-Components and javascript.
 				Presently working as a freelancer with a passion for web development.
 			</p>
-			<h2 className=' text-3xl tracking-widest py-3'>tech stacks</h2>
+			<h3 className=' text-3xl tracking-widest py-3'>tech stacks</h3>
 			<ul className=' leading-6 p-2 bg-white tracking-wider'>
 				<li className=' list-disc'>React, NextJS</li>
 				<li className=' list-disc'>NodeJS, Express, MongoDB, Strapi</li>
@@ -63,15 +63,17 @@ const About = () => {
 			</ul>
 			<p className=' pt-5 text-gray-400 tracking-wider text-xl inline-block'>
 				check out some of my{' '}
-				<Link href='/projects' passHref>
+				<Link href='/projects'>
 					<a className='text-purple-400  text-xl  underline hover:text-red-300'>
 						projects
 					</a>
 				</Link>
 			</p>
-			<a className='text-purple-400  text-xl ml-6 underline hover:text-red-300'>
-				<Link href='/contact'>hire me</Link>
-			</a>
+			<Link href='/contact'>
+				<a className='text-purple-400  text-xl ml-6 underline hover:text-red-300'>
+					hire me
+				</a>
+			</Link>
 		</div>
 	);
 };
