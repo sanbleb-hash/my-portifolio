@@ -26,7 +26,7 @@ const Projects = () => {
 					className='    relative z-30 w-[65%] min-h-[400px] overflow-auto snap-x snap-mandatory
             scrollbar-thin scrollbar-track-gray-400 scrollbar-thumb-gray-300 scrollbar-thumb-rounded scrollbar-track-rounded scrollbar-h-1 scrollbar-corner-gray-700      '
 				>
-					<div className='flex   items-center justify-start  gap-5   px-3 absolute z-10 left-0 top-5 py-4 overflow-x-auto  min-w-[65%] bg-white '>
+					<div className='flex   items-center justify-start  gap-5   px-3 absolute z-10 left-0 top-5 py-4 overflow-x-auto  min-w-[65%] bg-white shadow '>
 						{data.map((project) => (
 							<div
 								key={project.id}
