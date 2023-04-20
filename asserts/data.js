@@ -3,12 +3,12 @@ export const data = [
 		id: 1,
 		name: 'music artist',
 
-		image: ['/images/artist.png'],
+		image: ['/images/artist.png', '/images/artist-mobile.png'],
 		description:
 			"this website is for an entrepreneur musical artist , users will find all of the latest music releases, exclusive merchandise, and exciting updates on upcoming events.The homepage features a sleek design that highlights the artist's brand and latest releases. Visitors can easily navigate to the music page, where they can stream or download the artist's music. The site offer both individual track purchases and full album downloads, making it easy for fans to support the artist in their preferred way.In addition to music,there's a variety of merchandise options. Fans can browse through the selection of t-shirts, hoodies, and accessories, all featuring the artist's unique branding and designs. We also offer limited edition items for collectors, so fans can get their hands on exclusive items that won't be available forever.the website also features a blog section, where fans can stay up-to-date on all of the artist's latest news and updates. We also offer a contact form for fans to reach out with any questions or comments they may have.Overall, the website is the perfect hub for fans to stay connected with the entrepreneur musical artist, and to support them by purchasing their music and merchandise.",
 
 		techStack: ['reactjs,nodejs ,express & stripe,firebase'],
-		link: 'https://artist-gilt.vercel.app/',
+		link: 'https://artistapp.netlify.app/',
 	},
 	{
 		id: 2,

@@ -24,7 +24,7 @@ const DetailsPage = () => {
 	};
 
 	return (
-		<div className='w-[80vw] pt-[10vh] px-4 min-h-[80vh] mx-auto '>
+		<div className=' w-[95%] md:w-[80vw] pt-[10vh] px-4 min-h-[80vh] mx-auto '>
 			{!project ? (
 				<h1 className='pt-[10vh] text-gray-600 text-center '>
 					sorry thats was`t available
