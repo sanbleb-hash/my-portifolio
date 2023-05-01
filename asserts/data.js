@@ -12,14 +12,14 @@ export const data = [
 	},
 	{
 		id: 2,
-		name: 'doctor-appointments',
+		name: 'real estate landing page',
 
-		image: ['/images/doc-appointments-1.png'],
+		image: ['/images/real-estate.jpeg'],
 		description:
-			'this app is for patients to be able to book a specific medical doctor with in a particular feild or category, to be able to create an appointment a petient has to login or register through the application first, there after they can book update and cancel appointments.then the request doctor can view his appointments decide to confirm or cancel and delete appointments. uses JWT authentication and a mongoDB database to store the appointments',
+			'A real estate website landing page with a variety of features and information to entice visitors to explore properties and ultimately make a purchase or rental decision.',
 
-		techStack: ['reactjs,nodejs,expressjs,mongodb'],
-		link: 'https://doctor-appointment-01.vercel.app/',
+		techStack: ['reactjs,nextJs 13,mongodb'],
+		link: 'https://real-estate-49yb3dj0s-sanbleb-hash.vercel.app',
 	},
 	{
 		id: 3,
@@ -30,7 +30,7 @@ export const data = [
 			'this is for a videographer interprenuer based in Capetown who wanted to showcase his work and have  sound portifolio for clients both see his work be able book him through the app.This app uses nodejs and MOngodb database in the backend and cloudinary storage to store the video and image assets.',
 
 		techStack: ['reactjs | nextJS,Strapi'],
-		link: 'https://works-mult-media.vercel.app/',
+		link: 'https://worksmultimedia.netlify.app',
 	},
 	{
 		id: 4,
@@ -42,5 +42,16 @@ export const data = [
 
 		techStack: ['reactjs,Strapi'],
 		link: 'https://house-market-mern-01.vercel.app/',
+	},
+	{
+		id: 5,
+		name: 'doctor-appointments',
+
+		image: ['/images/doc-appointments-1.png'],
+		description:
+			'this app is for patients to be able to book a specific medical doctor with in a particular feild or category, to be able to create an appointment a petient has to login or register through the application first, there after they can book update and cancel appointments.then the request doctor can view his appointments decide to confirm or cancel and delete appointments. uses JWT authentication and a mongoDB database to store the appointments',
+
+		techStack: ['reactjs,nodejs,expressjs,mongodb'],
+		link: 'https://doctor-appointment-01.vercel.app/',
 	},
 ];
