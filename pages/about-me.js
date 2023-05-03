@@ -48,10 +48,11 @@ const About = () => {
 			)}
 			<h2 className=' text-3xl tracking-widest py-3'>skills and experience</h2>
 			<p className=' leading-6 p-2 bg-white tracking-wider'>
-				2 years of experience in the web Software developer, with knowledge and
-				comfidence working with existing API | NodeJs & MongoDB database, react
-				| nextjs , HTML, CSS, tailwindcss, Styled-Components and javascript.
-				Presently working as a freelancer with a passion for web development.
+				With over 3 years experience as the web Software developer, with
+				knowledge and expertise working with existing REST API | NodeJs &
+				MongoDB database, react | nextjs , HTML, CSS, tailwindcss,
+				Styled-Components and javascript. Presently working as a freelancer with
+				a passion for web .
 			</p>
 			<h3 className=' text-3xl tracking-widest py-3'>tech stacks</h3>
 			<ul className=' leading-6 p-2 bg-white tracking-wider'>
